@@ -11,14 +11,16 @@ public class Function implements IFunction {
 		return a - b;
 	}
 	@Override
-	public int mul(int a, int b) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-	@Override
 	public int sub(int a, int b) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-	
+
+	@Override
+	public int mul(int a, int b) {
+		int mul = a *b;
+		return mul;
+	}
+
+
 }
