@@ -1,6 +1,7 @@
 package func;
 
 public class Function implements IFunction {
+<<<<<<< HEAD
 	@Override
 	public int add(int a, int b) {
 		// TODO Auto-generated method stub
@@ -23,4 +24,11 @@ public class Function implements IFunction {
 	}
 
 
+=======
+	public int add(int a, int b) {
+		int result=0;
+		result=a+b;
+		return result;
+	}
+>>>>>>> haeun
 }
