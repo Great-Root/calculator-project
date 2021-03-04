@@ -3,7 +3,7 @@ package func;
 public class Function implements IFunction {
 	@Override
 	public double div(int a, int b) {
-		
+		return (double)a/b;
 	}
 	@Override
 	public int sub(int a, int b) {
