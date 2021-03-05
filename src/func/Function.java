@@ -27,15 +27,26 @@ public class Function implements IFunction {
 		return mul;
 	}
 	
+	@Override //3개 곱셈 기능 
+	public int mul(int a,int b,int c) {
+		int mul=a*b*c;
+		return mul;
+	}
+	
 	@Override	//2개 나눗셈 기능
 	public double div(int a, int b) {
 		return (double)a/b;
 	}
+<<<<<<< HEAD
 	@Override
 	public double div(int a, int b, int c) {
 		// TODO Auto-generated method stub
 		return (double)((a/b)/c);
 	}
+=======
+	
+	
+>>>>>>> haeun
 
 	public void twoCal(Scanner input,String sel) {
 		
