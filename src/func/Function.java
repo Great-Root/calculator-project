@@ -8,6 +8,10 @@ public class Function implements IFunction {
 	public int add(int a, int b) {
 		return a+b;
 	}
+	//3개 덧셈 기능
+	public int add(int a, int b, int c) {
+		return a+b+c;
+	}
 	
 	@Override	//2개 뺄셈 기능
 	public int sub(int a, int b) {
@@ -60,7 +64,7 @@ public class Function implements IFunction {
 		int c= input.nextInt();
 		switch (sel) {
 		case "덧셈":
-			System.out.println(a+" + "+b+" + "+ c +" = "+add(a,b));
+			System.out.println(a+" + "+b+" + "+ c +" = "+add(a,b,c));
 			break;
 		case "뺄셈":
 			System.out.println(a+" - "+b+" - "+ c +" = "+sub(a,b));
