@@ -8,10 +8,19 @@ public class Function implements IFunction {
 	public int add(int a, int b) {
 		return a+b;
 	}
+	@Override
+	public int add(int a, int b, int c) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 	@Override	//2개 뺄셈 기능
 	public int sub(int a, int b) {
 		return a - b;
+	}
+	@Override
+	public int sub(int a, int b, int c) {
+		return a - b - c;
 	}
 	
 	@Override	//2개 곱셈 기능
@@ -19,10 +28,20 @@ public class Function implements IFunction {
 		int mul = a *b;
 		return mul;
 	}
+	@Override
+	public int mul(int a, int b, int c) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 	@Override	//2개 나눗셈 기능
 	public double div(int a, int b) {
 		return (double)a/b;
+	}
+	@Override
+	public double div(int a, int b, int c) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 	public void twoCal(Scanner input,String sel) {
@@ -56,20 +75,20 @@ public class Function implements IFunction {
 		int a= input.nextInt();
 		System.out.print("b 입력 : ");
 		int b= input.nextInt();
-		System.out.print("b 입력 : ");
+		System.out.print("c 입력 : ");
 		int c= input.nextInt();
 		switch (sel) {
 		case "덧셈":
-			System.out.println(a+" + "+b+" + "+ c +" = "+add(a,b));
+			System.out.println(a+" + "+b+" + "+ c +" = "+add(a,b,c));
 			break;
 		case "뺄셈":
-			System.out.println(a+" - "+b+" - "+ c +" = "+sub(a,b));
+			System.out.println(a+" - "+b+" - "+ c +" = "+sub(a,b,c));
 			break;
 		case "곱셈":
-			System.out.println(a+" * "+b+" * "+ c +" = "+mul(a,b));
+			System.out.println(a+" * "+b+" * "+ c +" = "+mul(a,b,c));
 			break;
 		case "나눗셈":
-			System.out.println(a+" / "+b+" / "+ c +" = "+div(a,b));
+			System.out.println(a+" / "+b+" / "+ c +" = "+div(a,b,c));
 			break;
 
 		default:
