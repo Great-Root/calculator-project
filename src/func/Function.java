@@ -21,11 +21,13 @@ public class Function implements IFunction {
 		return a - b;
 	}
 	
-	@Override	//3개 뺄셈 기능
+
+	@Override //3개 뺄셈 기능
 	public int sub(int a, int b, int c) {
 		return a - b - c;
 	}
-	
+
+
 	@Override	//2개 곱셈 기능
 	public int mul(int a, int b) {
 		int mul = a *b;
@@ -49,8 +51,6 @@ public class Function implements IFunction {
 		return (double)((a/b)/c);
 	}
 
-	
-	
 
 	public void twoCal(Scanner input,String sel) {
 		
@@ -122,18 +122,7 @@ public class Function implements IFunction {
 		return;
 	}
 
-	
-	@Override
-	public int sub(int a, int b, int c) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 
-	@Override
-	public int mul(int a, int b, int c) {
-		int mul = a *b*c;
-		return mul;
-	}
 
 
 }
