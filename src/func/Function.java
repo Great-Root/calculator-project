@@ -47,7 +47,7 @@ public class Function implements IFunction {
 	@Override
 	public double div(int a, int b, int c) {
 		// TODO Auto-generated method stub
-		return 0;
+		return (double)((a/b)/c);
 	}
 
 	public void twoCal(Scanner input,String sel) {
