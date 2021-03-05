@@ -60,16 +60,16 @@ public class Function implements IFunction {
 		int c= input.nextInt();
 		switch (sel) {
 		case "덧셈":
-			System.out.println(a+" + "+b+" + "+ c +" = "+add(a,b));
+			System.out.println(a+" + "+b+" + "+ c +" = "+add(a,b,c));
 			break;
 		case "뺄셈":
-			System.out.println(a+" - "+b+" - "+ c +" = "+sub(a,b));
+			System.out.println(a+" - "+b+" - "+ c +" = "+sub(a,b,c));
 			break;
 		case "곱셈":
 			System.out.println(a+" * "+b+" * "+ c +" = "+mul(a,b,c));
 			break;
 		case "나눗셈":
-			System.out.println(a+" / "+b+" / "+ c +" = "+div(a,b));
+			System.out.println(a+" / "+b+" / "+ c +" = "+div(a,b,c));
 			break;
 
 		default:
