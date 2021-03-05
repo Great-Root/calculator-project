@@ -8,16 +8,12 @@ public class Function implements IFunction {
 	public int add(int a, int b) {
 		return a+b;
 	}
-<<<<<<< HEAD
+
 	//3개 덧셈 기능
-	public int add(int a, int b, int c) {
-		return a+b+c;
-=======
 	@Override
 	public int add(int a, int b, int c) {
-		// TODO Auto-generated method stub
-		return 0;
->>>>>>> 4b90d1b1a20ed25a2433451d07031842c6a8be92
+		return a+b+c;
+
 	}
 	
 	@Override	//2개 뺄셈 기능
