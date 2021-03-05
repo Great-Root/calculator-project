@@ -21,6 +21,11 @@ public class Function implements IFunction {
 		return a - b;
 	}
 	
+	@Override
+	public int sub(int a, int b, int c) {
+		return a - b - c;
+	}
+	
 	@Override	//2개 곱셈 기능
 	public int mul(int a, int b) {
 		int mul = a *b;
@@ -37,16 +42,13 @@ public class Function implements IFunction {
 	public double div(int a, int b) {
 		return (double)a/b;
 	}
-<<<<<<< HEAD
 	@Override
 	public double div(int a, int b, int c) {
 		// TODO Auto-generated method stub
 		return (double)((a/b)/c);
 	}
-=======
 	
 	
->>>>>>> haeun
 
 	public void twoCal(Scanner input,String sel) {
 		
@@ -119,17 +121,7 @@ public class Function implements IFunction {
 	}
 
 
-	@Override
-	public int sub(int a, int b, int c) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 
-	@Override
-	public int mul(int a, int b, int c) {
-		int mul = a *b*c;
-		return mul;
-	}
 
 
 }
