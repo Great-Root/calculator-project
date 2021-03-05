@@ -24,10 +24,18 @@ public class Function implements IFunction {
 		return mul;
 	}
 	
+	@Override //3개 곱셈 기능 
+	public int mul(int a,int b,int c) {
+		int mul=a*b*c;
+		return mul;
+	}
+	
 	@Override	//2개 나눗셈 기능
 	public double div(int a, int b) {
 		return (double)a/b;
 	}
+	
+	
 
 	public void twoCal(Scanner input,String sel) {
 		
@@ -70,7 +78,7 @@ public class Function implements IFunction {
 			System.out.println(a+" - "+b+" - "+ c +" = "+sub(a,b));
 			break;
 		case "곱셈":
-			System.out.println(a+" * "+b+" * "+ c +" = "+mul(a,b));
+			System.out.println(a+" * "+b+" * "+ c +" = "+mul(a,b,c));
 			break;
 		case "나눗셈":
 			System.out.println(a+" / "+b+" / "+ c +" = "+div(a,b));
