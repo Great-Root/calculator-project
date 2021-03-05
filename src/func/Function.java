@@ -8,6 +8,16 @@ public class Function implements IFunction {
 	public int add(int a, int b) {
 		return a+b;
 	}
+<<<<<<< HEAD
+=======
+
+	//3개 덧셈 기능
+	@Override
+	public int add(int a, int b, int c) {
+		return a+b+c;
+
+	}
+>>>>>>> 698925507a715951e882d2e9d8095501498d77f7
 	
 	@Override	//2개 뺄셈 기능
 	public int sub(int a, int b) {
@@ -24,6 +34,14 @@ public class Function implements IFunction {
 	public double div(int a, int b) {
 		return (double)a/b;
 	}
+<<<<<<< HEAD
+=======
+	@Override
+	public double div(int a, int b, int c) {
+		// TODO Auto-generated method stub
+		return (double)((a/b)/c);
+	}
+>>>>>>> 698925507a715951e882d2e9d8095501498d77f7
 
 	public void twoCal(Scanner input,String sel) {
 		
