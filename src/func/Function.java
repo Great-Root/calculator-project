@@ -56,7 +56,7 @@ public class Function implements IFunction {
 		int a= input.nextInt();
 		System.out.print("b 입력 : ");
 		int b= input.nextInt();
-		System.out.print("b 입력 : ");
+		System.out.print("c 입력 : ");
 		int c= input.nextInt();
 		switch (sel) {
 		case "덧셈":
@@ -66,7 +66,7 @@ public class Function implements IFunction {
 			System.out.println(a+" - "+b+" - "+ c +" = "+sub(a,b));
 			break;
 		case "곱셈":
-			System.out.println(a+" * "+b+" * "+ c +" = "+mul(a,b));
+			System.out.println(a+" * "+b+" * "+ c +" = "+mul(a,b,c));
 			break;
 		case "나눗셈":
 			System.out.println(a+" / "+b+" / "+ c +" = "+div(a,b));
@@ -93,6 +93,30 @@ public class Function implements IFunction {
 			break;
 		}
 		return;
+	}
+
+	@Override
+	public int add(int a, int b, int c) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int sub(int a, int b, int c) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int mul(int a, int b, int c) {
+		int mul = a *b*c;
+		return mul;
+	}
+
+	@Override
+	public double div(int a, int b, int c) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }
